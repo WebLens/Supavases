@@ -835,7 +835,7 @@ body {
 }
 @media (max-width: 61.99875em) {
   .intro {
-    background: none;
+    background: none !important;
   }
 }
 @media (min-width: 75em) {
