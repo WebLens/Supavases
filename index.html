@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>supabase</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20221010200710">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js?_v=20221010200710"></script>
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__menu menu">
+					<a data-goto=".intro" href="" class="header__logo"><img src="img/icons/logo.svg" alt="логотип"></a>
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li class="menu__item"><a data-goto-header data-goto=".product" href="" class="menu__link">Product</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".developers" href="" class="menu__link">Developers</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".beta" href="" class="menu__link">Beta</a></li>
+							<li class="menu__item"><a data-goto-header data-goto=".pricing" href="" class="menu__link">Pricing</a></li>
+						</ul>
+					</nav>
+					<button type="button" class="menu__icon icon-menu"><span></span></button>
+					<div data-da=".menu__body, 768" class="header__btns">
+						<button type="button" class="menu__btn btn">Start your project</button>
+						<button type="button" class="menu__signin btn">Sign in</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<div class="intro">
+				<div class='intro__container'>
+					<div class="intro__row">
+						<div class="intro__column">
+							<div class="intro__page intro-page ">
+								<img src="img/icons/shop.svg" alt="Корзина">
+								<div class="intro-page__title">Storage</div>
+							</div>
+							<div class="intro__title">Store and serve <br> any type of digital content</div>
+							<div class="intro__descs">
+								<div class="intro__desc">An open source Object store service with unlimited scalability, for any file type.</div>
+								<div class="intro__desc">With custom policies and permissions that are familiar and easy to implement.</div>
+							</div>
+						</div>
+						<div class="intro__column">
+							<a data-goto="#" href="" class="intro__btn btn">Start a project</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="bennefits">
+				<div class='bennefits__container'>
+					<div class="bennefits__row">
+						<div class="bennefits__column">
+							<div class="bennefits__pic">
+								<img src="img/icons/delete.svg" alt="Удалить">
+								<img src="img/icons/x.svg" alt="x">
+								<img src="img/icons/key.svg" alt="Ключ">
+								<img src="img/icons/x.svg" alt="x">
+								<img src="img/icons/burger.svg" alt="Бургер">
+							</div>
+							<div class="bennefits__title">Interoperable</div>
+							<div class="bennefits__desc">Integrates well with the rest of Supabase ecosystem, including Auth and Postgres.</div>
+						</div>
+						<div class="bennefits__column">
+							<div class="bennefits__pic">
+								<img src="img/icons/lines.svg" alt="Сеть">
+							</div>
+							<div class="bennefits__title">Lightning fast</div>
+							<div class="bennefits__desc">Thin API server layer that leverages Postgres' permissions and performance.</div>
+						</div>
+						<div class="bennefits__column">
+							<div class="bennefits__pic">
+								<img src="img/icons/dependeble.svg" alt="Галочка">
+							</div>
+							<div class="bennefits__title">Dependable</div>
+							<div class="bennefits__desc">Enterprise-level scalability and durability.</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stack">
+				<div class='stack__container'>
+					<div class="stack__title title" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Sleek dashboard for managing your media</div>
+					<div class="stack__subtitle" data-aos="fade-left" data-aos-duration="1000">A complete Object Explorer so that any of your team can use.</div>
+					<div class="stack__about" data-aos="fade-left" data-aos-duration="1000">Drag and drop uploading, moving objects, and multiple object selection. As easy as working on your desktop.</div>
+					<div class="stack__row">
+						<div class="stack__column">
+							<div class="stack__nav" data-aos="fade-up" data-aos-duration="800" data-aos-anchor=".stack__image" data-aos-delay="250">
+								<a class="stack__link active" href="#">File previews</a>
+								<a class="stack__link" href="#">Column view</a>
+								<a class="stack__link" href="#">List view</a>
+								<a class="stack__link" href="#">Multi select actions</a>
+								<a class="stack__link" href="#">Path navigator</a>
+							</div>
+							<picture><source srcset="img/dashboard.webp" type="image/webp"><img class="stack__image" src="img/dashboard.jpg" alt="Картинка" data-aos="zoom-out-down" data-aos-easing="ease-out-cubic" data-aos-duration="600"></picture>
+						</div>
+						<div class="stack__column">
+							<div class="stack__texts">
+								<div class="stack__desc" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn">File previews</div>
+								<div class="stack__aboutdesc" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn" data-aos-delay="300">Preview any media type, including video and audio.</div>
+								<div class="stack__desc" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn" data-aos-delay="600">Check out our example app</div>
+							</div>
+							<div class="stack__content stack-content" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn" data-aos-delay="900">
+								<div class="stack-content__title">Profile management example</div>
+								<div class="stack-content__subtitle">Update a user account with public profile information, including uploading a profile image.</div>
+								<div class="stack-content__desc ">Created by: <img src="img/icons/logo-mini.svg" alt="Логотип-мини"> supabase</div>
+							</div>
+							<div class="stack__bottom" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn" data-aos-delay="1200">
+								<div class="stack-content__desc">nextjs-ts-user-management <img src="img/icons/git-mini.svg" alt="Гит-мини иконка"></div>
+								<a href="#" class="stack__btn _icon-text-btn" data-aos="fade-down-left" data-aos-duration="1000" data-aos-anchor=".stack__btn" data-aos-delay="1500"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="api">
+				<div class='api__container'>
+					<div class="api__row">
+						<div class="api__column">
+							<div class="api__texts">
+								<div class="api__title title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">Simple and convenient APIs</div>
+								<div class="api__subtitle" data-aos="fade-left" data-aos-duration="1000">Built from the ground-up for interoperable authentication.</div>
+								<div class="api__subtitle" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="100">Fast and easy to implement using our powerful library clients. Asset optimization and image transformation coming soon!</div>
+							</div>
+							<div class="api__bennefits api-bennefits">
+								<div class="api-bennefits__card ">
+									<img src="img/icons/wifi.svg" alt="Wi-Fi" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="300">
+									<div class="api-bennefits__title" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="500">CDN integration</div>
+									<div class="api-bennefits__subtitle" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="700">Serve from the edge to reduce latency.</div>
+									<div data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="900"><a href="#" class="api-bennefits__btn">Coming soon</a></div>
+								</div>
+								<div class="api-bennefits__card ">
+									<img src="img/icons/topdown.svg" alt="Arrows" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="600">
+									<div class="api-bennefits__minititle" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="800">Auto transformation & optimisation</div>
+									<div class="api-bennefits__subtitle" data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="1000">Resize and compress your media before you serve it..</div>
+									<div data-aos="fade-down" data-aos-duration="1000" data-aos-anchor=".api__subtitle" data-aos-delay="1200"><a href="#" class="api-bennefits__btn ">Coming soon</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="api__column">
+							<div class="code">
+								<div class="code__nav" data-aos="fade-up" data-aos-duration="800" data-aos-anchor=".api__subtitle" data-aos-delay="1150">
+									<a href="#" class="code__link active">Upload a file</a>
+									<a href="#" class="code__link">Download a file</a>
+									<a href="#" class="code__link">List files</a>
+									<a href="#" class="code__link">Move and rename files</a>
+									<a href="#" class="code__link">Delete files</a>
+								</div>
+								<div class="code__panel panel-api" data-watch data-aos="flip-left" data-aos-anchor=".api__subtitle" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="900">
+									<a href="#" class="code__copy"><img src="img/icons/copy.svg" alt="Копировать">Copy</a>
+									<div class="code__strokes">
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">1</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">2</div>
+											<div class="code-stroke__text code-stroke-text__yellow api__text">
+												<p>// Upload an image to the "avatars" bucket</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">3</div>
+											<div class="code-stroke__text code-stroke-text api__text">
+												<p><span class="code-stroke-text__blue">const</span>spaceCat = event.target.files[0]</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">4</div>
+											<div class="code-stroke__text code-stroke-text api__text">
+												<p><span class="code-stroke-text__blue">const</span>{ data, error } = <span class="code-stroke-text__blue">await</span> supabase</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">5</div>
+											<div class="code-stroke__text code-stroke-text api__text">
+												<p>.storage</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">6</div>
+											<div class="code-stroke__text code-stroke-text api__text">
+												<p>.from(<span class="code-stroke-text__green">'avatars'</span>)</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">7</div>
+											<div class="code-stroke__text code-stroke-text api__text">
+												<p>.upload(<span class="code-stroke-text__green">'space-cat.png'</span>, spaceCat)</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">8</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">9</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">10</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">11</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">12</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">13</div>
+											<div class="code-stroke__text"></div>
+										</div>
+										<hr class="code__line">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="intergrate">
+				<div class='intergrate__container'>
+					<div class="intergrate__row">
+						<div class="intergrate__column">
+							<div class="intergrate__texts">
+								<div class="intergrate__title title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">Integrates natively with Supabase Auth</div>
+								<div class="intergrate__subtitle" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">Using Postgres Row Level Security to create Object access rules.</div>
+								<div class="intergrate__desc" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">Storage Authorization is built around Postgres so that you can use any combination of SQL, Postgres functions, and even your own metadata to write policies.</div>
+							</div>
+							<div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300"><a href="#" class="intergrate__btn"><img src="img/icons/up.svg" alt="Вверх">Expore documentation</a></div>
+						</div>
+						<div class="intergrate__column">
+							<div class="code">
+								<div class="code__nav" data-aos="fade-up" data-aos-duration="800" data-aos-anchor=".intergrate__desc" data-aos-delay="550">
+									<a href="#" class="code__link active">Upload a file</a>
+									<a href="#" class="code__link">Download a file</a>
+									<a href="#" class="code__link">List files</a>
+									<a href="#" class="code__link">Move and rename files</a>
+									<a href="#" class="code__link">Delete files</a>
+								</div>
+								<div class="code__panel panel-int" data-watch data-aos="flip-left" data-aos-anchor=".intergrate__desc" data-aos-easing="ease-out-cubic" data-aos-duration="1000" data-aos-delay="300">
+									<a href="#" class="code__copy"><img src="img/icons/copy.svg" alt="Копировать">Copy</a>
+									<div class="code__strokes">
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">1</div>
+											<div class="code-stroke__text code-stroke-text int__text">
+												<p><span class="code-stroke-text__blue">create policy</span><span class="code-stroke-text__green">"Public Access"</span></p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">2</div>
+											<div class="code-stroke__text code-stroke-text int__text">
+												<p><span class="code-stroke-text__blue">on </span>storage.objects<span class="code-stroke-text__blue">for all</span></p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">3</div>
+											<div class="code-stroke__text code-stroke-text int__text">
+												<p><span class="code-stroke-text__blue">using</span>( bucket_id =<span class="code-stroke-text__blue">'avatars'</span> );</p>
+											</div>
+										</div>
+										<div class="code__stroke code-stroke">
+											<div class="code-stroke__number">4</div>
+											<div class="code-stroke__text code-stroke-text"></div>
+										</div>
+									</div>
+									<div class="code__texts">
+										<div class="code__title">Allow public CRUD access to a bucket</div>
+										<div class="code__subtitle">This will allow any user access to the bucket named 'avatars'</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="btns">
+				<div class='btns__container'>
+					<div class="btns__title title" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000"><span>Build in a weekend,</span> scale to millions</div>
+					<div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300"><a href="#" class=" btns__btn btn">Start your project</a></div>
+				</div>
+			</div>
+	</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__row">
+				<div class="footer__column">
+					<img src="img/icons/logo.svg" alt="Лого" class="footer__logo" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">Simple and convenient APIs>
+					<div class="footer__socs" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="200">
+						<a href="#" class="footer__soc _icon-twitter"></a>
+						<a href="#" class="footer__soc _icon-git"></a>
+					</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="100">Product</div>
+					<ul class="footer__links">
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="200"><a href="#" class="footer__link">Database</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300"><a href="#" class="footer__link">Authentication</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400"><a href="#" class="footer__link">Storage</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500"><a href="#" class="footer__link">Functions</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600"><a href="#" class="footer__link footer-link__gray">Coming soon</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="700"><a href="#" class="footer__link">Pricing</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="200">Resources</div>
+					<ul class="footer__links">
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300"><a href="#" class="footer__link">Support</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400"><a href="#" class="footer__link">Case Studies</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500"><a href="#" class="footer__link">System Status</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600"><a href="#" class="footer__link">Terms of service</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="300">Developers</div>
+					<ul class="footer__links">
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400"><a href="#" class="footer__link">Documentation</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500"><a href="#" class="footer__link">API Reference</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600"><a href="#" class="footer__link">Guides</a></li>
+					</ul>
+				</div>
+				<div class="footer__column">
+					<div class="footer__title" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="400">Company</div>
+					<ul class="footer__links">
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500"><a href="#" class="footer__link">Blog</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="600"><a href="#" class="footer__link">Authentication</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="700"><a href="#" class="footer__link">Open Source</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="800"><a href="#" class="footer__link">Humans.txt</a></li>
+						<li data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="900"><a href="#" class="footer__link">Lawyers.txt</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer__rights">
+				<div class="footer__right" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="500">© Supabase Inc</div>
+				<div class="footer__toggles" data-aos="fade-down" data-aos-anchor-placement="top-bottom" data-aos-duration="1000" data-aos-delay="800">
+					<div class="footer__pic _icon-sun"></div>
+					<div class="footer__toggle switch-on"></div>
+					<div class="footer__pic _icon-moon"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	</div>
+	<!-- 
+<div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+			</div>
+		</div>
+	</div>
+</div>
+ -->
+
+	<script src="js/app.min.js?_v=20221010200710"></script>
+</body>
+<script>
+	AOS.init();
+</script>
+
+</html>
